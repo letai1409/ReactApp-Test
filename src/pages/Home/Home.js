@@ -17,7 +17,7 @@ export class HomePage extends Component {
   render() {
     const topFiveUserNameButton = this.state.topFive.map((username,index) => {
       return (
-      <Button key={index} variant="contained" size="small" color="primary" 
+      <Button key={index} variant="contained" size="small" color="primary" className="btn-username" 
         onClick={() => this.props.history.push('/person?username='+ username)}>
         { username }
       </Button>
